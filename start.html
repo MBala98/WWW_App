@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Moja Gra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="start.css">
+
+</head>
+
+<body>
+    <div class="title">
+        <h1>Kosmiczny handlarz</h1>
+    </div>
+    <div class="source">
+        <a href="https://sites.google.com/site/krzysztofciebiera/Home/www/zadanie-zaliczeniowe?authuser=0"
+            class="link_button">
+            Click here for a description of the game!</a>
+    </div>
+    <div class="result_table">
+        <table id="top_table" class="tables">
+            <caption>Best Scores</caption>
+            <tr>
+                <th>Nickname</th>
+                <th>Score</th>
+            </tr>
+        </table>
+    </div>
+    <div class="box">
+        <a class="button" href="#popup1">Click to play</a>
+    </div>
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Pick your nick</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <form action="main_screen.html">
+                    <p>Nickname:</p>
+                    <input type="text" name="nickname" required id="nick"><br>
+                    <input type="submit" value="Play!" id="button" method="get">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="start.js"></script>
+</body>
+
+</html>

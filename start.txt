@@ -1,0 +1,14 @@
+function showPlanet('Ziemia') {
+    var popup = document.getElementById("Ziemia");
+    popup.classList.toggle("show");
+  }
+
+  function showShip(text) {
+    var popup = document.getElementById(text);
+    popup.classList.toggle("show");
+  }
+
+  function showShipTravel(text) {
+    var popup = document.getElementById(text);
+    popup.classList.toggle("show");
+  }

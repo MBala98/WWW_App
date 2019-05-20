@@ -1,0 +1,170 @@
+.header {
+    background-color: rgb(197, 191, 191);
+}
+
+body {
+  margin: 0px;
+  background-image: url("background2.png");
+}
+div.values {
+    display: flex;
+    justify-content: space-between;
+}
+h1 {
+    text-align: center;
+}
+
+.popup_tables td, .popup_tables th{
+  border: 1px solid black;
+}
+table.my_tables {
+    padding: 0;
+    list-style-position: inside;
+    text-align: center;
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(243, 245, 244);
+}
+
+.Title {
+  font-size: 40px;  
+}
+tr:nth-child(odd) {
+  background-color: rgb(201, 206, 202);
+}
+
+
+.popuptext caption {
+  font-size: 20px;
+}
+table.my_tables td, .my_tables th {
+    border: 1px solid black;
+}
+
+.my_tables {
+    float: left;
+}
+
+
+.left_table {
+    margin-left: 15%;
+}
+.right_table {
+    margin-left: 30%;
+}
+table > caption {
+    font-size: 25px;
+    color: rgb(209, 12, 12);
+}
+.location {
+  cursor: pointer;
+}
+
+.form_content {
+  text-align: right;
+}
+.form {
+  display: inline-block;
+}
+@media all and (max-width: 500px) {
+
+    .right_table {
+        margin-left: 10%;
+    }
+  }
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    -webkit-animation: none;
+    animation: none;
+  }
+  .close:hover {
+    color: #06D85F;
+  }
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popuptext {
+    visibility: hidden;
+    display: block;
+    width: 60%;
+    height: 100%;
+    background-color: rgb(226, 219, 219);
+    color: rgb(8, 8, 8);
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0px;
+    margin: auto auto;
+    z-index: 1;
+    overflow: scroll;
+  }
+  
+  .popuptext .image {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .image img {
+    width: 100%;
+    
+  }
+  
+  
+
+  @media all and (max-width: 800px) {
+
+    
+    .popuptext {
+      width: 100%;
+    }
+
+    .popuptext .image {
+      position: relative;
+    }
+  }
+  /* Toggle this class - hide and show the popup */
+  .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  .hide {
+    visibility: hidden;
+    -webkit-animation: fadeOut 1s;
+    animation: fadeOut 1s;
+  }
+
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
